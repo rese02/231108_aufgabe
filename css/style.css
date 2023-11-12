@@ -3,6 +3,8 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    max-width: 900px;
+    margin: auto; 
 }
 
 h1 {
@@ -10,14 +12,19 @@ h1 {
     color: #333;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
 li {
     padding: 10px;
     margin: 5px;
-    background-color: #fff;
-    border-radius: 5px;
 }
+
+.done {
+    text-decoration: line-through;
+    color: #888;
+    background-color: #eee;
+}
+
+.new-task {
+    background-color: red;
+    color: #fff;
+}
+
