@@ -1,17 +1,25 @@
 "use strict";
 
+// variable deklarieren rene
 let vorname = "rene";
+
+// Template Strings die Variable vorname ein: "Todos von (vorname)
 document.querySelector('h1').textContent = `Todos von ${vorname}`;
 
-// sucht alle li mit Klasse 'done'
-document.querySelector('li')[1].classList.add('done');
+//zweite listenelement soll durch Hinzufügen einer CSS-klasse .done durchgestrichen werden.
+document.querySelectorAll('li')[1].classList.add('done');
 
-const newTask = document.createElement('li');
 
-newTask.textContent = "Auto reparieren";
-document.getElementById('todoList').appendChild(newTask);
-const firstTask = document.querySelector('li');
-firstTask.remove(`Einkaufen`);
+// neues <li>-Element.
+var neuesElement = document.createElement('li');
+neuesElement.textContent = "Auto waschen";
 
-document.getElementById('Auto reparieren').style.backgroundColor = 'red';
-newTask.style.backgroundColor = 'red';
+// am Ende der Liste das Listenelement hinzufühgen 
+document.querySelector('ul').appendChild(neuesElement);
+
+// erste Element löschen <li>Einkaufen</li>
+var erstesElement = document.querySelector('li');
+erstesElement.parentNode.removeChild(erstesElement);
+
+// Hintergrundfarbe auf rot
+neuesElement.style.backgroundColor = "red";
