@@ -12,6 +12,6 @@ newTask.textContent = "Auto reparieren";
 document.getElementById('todoList').appendChild(newTask);
 const firstTask = document.querySelector('li');
 firstTask.remove(`Einkaufen`);
-newTask.style.backgroundColor = 'red';
 
 document.getElementById('Auto reparieren').style.backgroundColor = 'red';
+newTask.style.backgroundColor = 'red';
